@@ -1,0 +1,16 @@
+title: Discord bot
+description: How to create a discord bot
+template:
+  repo: discord-bot-template
+  name: discord-bot
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
